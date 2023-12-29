@@ -1,0 +1,11 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "navigation": {
+    "home": "home",
+    "about": "about us",
+    "gates": "gates",
+    "keys": "keys"
+  }
+}
