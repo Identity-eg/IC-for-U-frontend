@@ -1,0 +1,25 @@
+.hero {
+  background-image: url("../../../assets/images/heroImg.png");
+  background-position: left;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 47, 172, 0.8) 0%,
+
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-box-image: linear-gradient(
+    to right,
+    rgba(0, 47, 172, 0.8) 0%,
+
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
