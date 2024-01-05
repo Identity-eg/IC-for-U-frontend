@@ -15,7 +15,7 @@ export default function Header() {
           <ul className='flex justify-center items-center gap-8'>
             {navLinks.map((link) => (
               <Link
-                key={link.id}
+                key={link.label}
                 className='capitalize font-medium'
                 href={link.to}
               >

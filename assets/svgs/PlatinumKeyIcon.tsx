@@ -1,4 +1,3 @@
-
 export default function PlatinumKeyIcon() {
   return (
     <svg
