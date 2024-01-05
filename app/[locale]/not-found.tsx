@@ -4,7 +4,7 @@ import Image from "next/image";
 import notFoundImage from "@/assets/images/404-2.svg";
 import { buttonVariants } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
-
+import { cn } from "@/lib/utils";
 
 const PageNotFound = () => {
   const t = useTranslations("pages.notFound");
@@ -20,7 +20,10 @@ const PageNotFound = () => {
         </div>
       </div>
       <div className="max-w-[300px] mx-auto w-full">
-        <Link href="/" className={buttonVariants({ variant: "default" })}>
+        <Link
+          href="/"
+          className={cn([buttonVariants({ variant: "default" }), "capitalize"])}
+        >
           {t("button")}
         </Link>
       </div>
