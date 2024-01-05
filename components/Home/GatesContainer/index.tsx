@@ -25,7 +25,7 @@ export default function GatesContainer() {
         <CarouselContent>
           {gates.map((gate) => (
             <CarouselItem
-              className="sm:basis-1/2 lg:basis-1/3 w-full"
+              className='sm:basis-1/2 lg:basis-1/3 w-full'
               key={gate.id}
             >
               <GatesCard title={gate.title} image={gate.image} key={gate.id} />
