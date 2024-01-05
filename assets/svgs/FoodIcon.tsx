@@ -16,7 +16,7 @@ export default function FoodIcon(props: Partial<IconProps>) {
           stroke={fillColor}
           strokeWidth="2"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
         />
         <path
           d="M44.7513 1.10938L45.87 23.2969C46.0267 26.3698 43.3752 28.8438 40.2761 28.8438L41.3949 66.5625C41.4509 68.4041 39.8958 69.8906 38.0386 69.8906C36.1814 69.8906 34.6263 68.4041 34.6822 66.5625L35.801 28.8438C32.702 28.8438 30.0505 26.3698 30.2071 23.2969L31.3259 1.10938"

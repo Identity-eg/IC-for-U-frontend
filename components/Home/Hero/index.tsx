@@ -3,11 +3,21 @@ import Styles from "./Hero.module.css";
 import Container from "@/components/Utils/Container";
 import { buttonVariants } from "../../../components/ui/button";
 import Link from "next/link";
+import heroImage from "@/assets/images/heroImg.png";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section>
-      <div className={cn([Styles.hero, "h-auto relative"])}>
+      <div className={"h-auto relative"}>
+        <div className="absolute inset-0">
+          <Image
+            alt=""
+            src={heroImage}
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className={Styles.overlay} />
         <Container className="py-32 relative z-[200]">
           <h1 className="text-6xl font-bold  text-white mb-4 max-w-[15ch]">
