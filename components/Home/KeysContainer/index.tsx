@@ -7,12 +7,16 @@ export default function KeysContainer() {
     <div>
       <Container className="py-24">
         <h2 className="mb-2">Select Your Key Life</h2>
-        <p className="max-w-[60ch] mb-16">
-          Enjoy your tour and relaxation trips according to the chosen main
-          destination and life key line with 24/7 telemedical assistance through
-          the hotline.
+        <p className=" mb-16">
+          Experience the ultimate in health tourism with our three exclusive
+          packages: Silver Key, Golden Key, and Platinum Key. Each package is
+          designed to cater to your specific needs, providing a seamless and
+          stress-free experience from start to finish.
         </p>
-        <div style={{gridTemplateColumns: "repeat(auto-fit,minmax(325px, 1fr))"}} className="grid gap-8">
+        <div
+          style={{ gridTemplateColumns: "repeat(auto-fit,minmax(325px, 1fr))" }}
+          className="grid gap-8"
+        >
           {keys.map((key) => (
             <KeysCard {...key} key={key.id} />
           ))}
