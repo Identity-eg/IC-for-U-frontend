@@ -5,16 +5,17 @@ import { navLinks } from "@/constants/navLinks";
 import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import LogoIcon from "@/assets/svgs/LogoIcon";
+import { DrawerMenu } from "./Menu";
 
 export default function Header() {
   const t = useTranslations("navigation");
   return (
     <nav className="border-b ">
       <Container className="flex justify-between items-center py-4">
-        <div>
-          <LogoIcon className="w-20 text-primary" />
-        </div>
-        <div className="hidden sm:flex justify-between items-center gap-10">
+        <Link href={"/"}>
+          <LogoIcon className="w-60 lg:w-72 text-primary" />
+        </Link>
+        <nav className="hidden md:flex justify-between items-center gap-10">
           <ul className="flex justify-center items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -35,7 +36,8 @@ export default function Header() {
           >
             take a tour
           </Link>
-        </div>
+        </nav>
+        <DrawerMenu />
       </Container>
     </nav>
   );

@@ -23,7 +23,7 @@ export default function GatesCard({ title, image }: GatesCardProp) {
       <div className='flex flex-col justify-between '>
         <h3 className='font-semibold mb-6'>{title}</h3>
         <Link
-          href={'#'}
+          href={'/gates'}
           className={cn([
             buttonVariants({ variant: 'secondary' }),
             'text-primary self-start',

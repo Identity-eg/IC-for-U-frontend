@@ -22,26 +22,28 @@ export default function Hero() {
       <CarouselWrapper opts={{ loop: true }}>
         <CarouselContent className="-ml-0">
           {heroImages.map((img, i) => (
-            <CarouselItem key={img.id} className="h-[50vh] pl-0">
+            <CarouselItem key={img.id} className="h-[50vh] sm:h-[60vh] pl-0">
               <div className="relative">
                 <Image
                   alt=""
                   src={img.src}
-                  className="h-[50vh] w-full object-cover "
+                  className="h-[50vh] sm:h-[60vh] w-full object-cover"
+                  width={1000}
+                  height={1000}
                 />
                 <div className={Styles.overlay} />
-                <Container className=" absolute inset-0 top-1/2 -translate-y-1/2">
-                  <h3 className="text-4xl sm:text-6xl font-bold  text-white mb-4 max-w-[20ch]">
+                <Container className="flex flex-col absolute inset-0 py-8 sm:py:32 lg:py-60">
+                  <h3 className="text-4xl sm:text-6xl font-bold  text-white mb-4 max-w-[35ch]">
                     {img.title}
                   </h3>
-                  <p className="text-xl text-white max-w-[50ch] mb-12">
+                  <p className="text-xl text-white max-w-[75ch] mb-12">
                     {img.description}
                   </p>
 
                   <Link
                     href="/gates"
                     className={cn([
-                      "capitalize ",
+                      "capitalize self-start",
                       buttonVariants({ variant: "default" }),
                     ])}
                   >
@@ -54,11 +56,11 @@ export default function Hero() {
         </CarouselContent>
         <CarouselPrevious className="invisible sm:visible left-8 " />
         <CarouselNext className="invisible sm:visible right-8 " />
-        <CarouselDots />
+        <CarouselDots className="bottom-6" />
       </CarouselWrapper>
 
       <div className="bg-primary ">
-        <Container className="text-center py-6">
+        <Container className="text-center py-2 sm:py-6">
           <h3 className="font-normal text-white">
             Start Your Heath Recovery Vacation{" "}
             <span className="font-bold">Now</span>

@@ -7,10 +7,10 @@ import LogoIcon from "@/assets/svgs/LogoIcon";
 export default function Footer() {
   return (
     <div className="bg-primary text-white">
-      <Container className="py-24">
+      <Container className="py-12">
         <div className="flex justify-between items-center pb-8 mb-8 border-b border-white/20 ">
           <div>
-            <LogoIcon size={24} className="w-20 text-white" />
+            <LogoIcon withWord={false} size={24} className="w-72 text-white" />
           </div>
           <ul className="flex sm:flex-row  flex-col gap-4 capitalize">
             {navLinks.map((link) => (

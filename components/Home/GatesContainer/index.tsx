@@ -14,7 +14,7 @@ export default function GatesContainer() {
   return (
     <Container className='py-24'>
       <h2 className='mb-2'>Choose the Gate</h2>
-      <p className='max-w-[60ch] mb-20'>
+      <p className=' mb-20'>
         Enjoy your tour and relaxation trips according to the chosen main
         destination and life key line with 24/7 telemedical assistance through
         the hotline.
