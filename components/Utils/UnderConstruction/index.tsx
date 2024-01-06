@@ -3,14 +3,13 @@ import Image from "next/image";
 import { Button, buttonVariants } from "@/components/ui/button";
 
 const UnderConstructionPage = () => {
-  
   return (
     <div className="min-h-screen">
       <div className="container">
         <div className="flex justify-center flex-wrap items-center min-h-screen flex-col text-center">
           <Image width={300} height={300} src={img} alt="" />
           <h4 className="text-3xl font-medium text-slate-900 dark:text-white mb-2">
-            We are under maintenance.
+            Page is under construction.
           </h4>
           <p className="font-normal text-base text-slate-500 dark:text-slate-300">
             We’re making the system more awesome. <br />
