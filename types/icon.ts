@@ -3,4 +3,5 @@ export type IconProps = {
   fillColor: string;
   strokeColor: string;
   strokeWidth: number;
+  className: string;
 };
