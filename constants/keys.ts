@@ -22,6 +22,7 @@ export const keys = [
         compareTitle: "accommodation",
         list: [
           { id: 4, listName: "Half-board accommodation" },
+          { id: 76, listName: "4 star Hotel /resort" },
           {
             id: 5,
             listName:
@@ -65,7 +66,8 @@ export const keys = [
       {
         compareTitle: "accommodation",
         list: [
-          { id: 11, listName: "All-inclusive accommodation" },
+          { id: 11, listName: "Full-board accommodation" },
+          { id: 75, listName: "5 star Hotel /resort" },
           {
             id: 12,
             listName:
@@ -110,6 +112,7 @@ export const keys = [
         compareTitle: "accommodation",
         list: [
           { id: 18, listName: "Full-board accommodation" },
+          { id: 74, listName: "4 star Hotel /resort" },
           {
             id: 19,
             listName:
